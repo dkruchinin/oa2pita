@@ -6,15 +6,21 @@ oa2pita demostrates how to deal with OAuth2 from a CLI tool (basically by launch
 
 So, what oa2pita can do? Not too much. When you launch it for the first time, it tries to get a new token from bitbucket, saves it to a file ($HOME/.bb.token) and dumps it out to your terminal. On subsequent runs it'll just output the saved token (it's brilliant at printing out things) up until the point when the token gets expired in which case oa2pita tries to refresh it.
 
-
-
 ## Setup
 
 Make sure your $GOPATH/bin directory is in your $PATH
 
     go get -u github.com/dkruchinin/oa2pita
 
-Go to bitbucket, click on your profile picture (top right corner if they haven't moved it around) -> bitbucket settings -> OAuth -> find and press "Add Consumer" button. Give the consumer a name (how about "pita"?), enter the callback URL and set up the permissions in exactly the same way you see it in the picture below.
+Go to bitbucket, 
+1. Click on your profile picture (top right corner if they haven't moved it around)
+2. -> bitbucket settings
+3. -> OAuth
+4. -> Find and press "Add Consumer" button
+5. Give the consumer a name (how about "pita"?) 
+6. Enter the callback URL and set up the permissions in exactly the same way you see it in the picture below.
+
+![bitbucket](https://github.com/dkruchinin/oa2pita/blob/master/img/bb.png)
 
 Now when you click on the consumer, you'll see generated *Key* and *Secret*. You'll need them
 
