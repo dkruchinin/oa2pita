@@ -35,7 +35,7 @@ func main() {
 			" get a new token...")
 		token = obtainNewToken(tokenFile)
 	} else if time.Now().After(token.Expiry) {
-		fmt.Println("Fie, your token is stale! Rfreshing...")
+		fmt.Println("Phew! Your token has expired. Rfreshing...")
 		token = refreshToken(token, tokenFile)
 	}
 
