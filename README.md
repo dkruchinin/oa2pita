@@ -32,5 +32,5 @@ Now when you click on the consumer, you'll see generated *Key* and *Secret*. You
     No token file exists at the moment. Trying to get a new token...
     Please enter a clinent ID: <put here your bibucket key and press enter>
     And a client secret: <and put your secret over here>
-    To authorize with bitbucket please follow this url:      https://bitbucket.org/site/oauth2/authorize?client_id=<KEY>&response_type=code&scope=project
+    To authorize with bitbucket please follow this url: https://bitbucket.org/site/oauth2/authorize?client_id=<KEY>&response_type=code&scope=project
     ...
