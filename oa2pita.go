@@ -48,7 +48,7 @@ func startAuthServer() {
 	fmt.Printf("Running auth server ...\n")
 	go func() {
 		http.HandleFunc("/authBitbucket", authHandler)
-		http.ListenAndServe(":6162", nil)
+		http.ListenAndServe(":8080", nil)
 	}()
 }
 
