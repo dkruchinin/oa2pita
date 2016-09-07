@@ -13,6 +13,7 @@ Make sure your $GOPATH/bin directory is in your $PATH
     go get -u github.com/dkruchinin/oa2pita
 
 Go to bitbucket, 
+
 1. Click on your profile picture (top right corner if they haven't moved it around)
 2. -> bitbucket settings
 3. -> OAuth
